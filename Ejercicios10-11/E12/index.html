@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> <img src="car.svg" alt="Car Icon" class="car-icon" /> Estacionamiento <img src="car.svg" alt="Car Icon"
+                class="car-icon" /> </h1>
+
+        <div class="menu">
+            <button id="entradaAuto">Entrada de Auto</button>
+            <button id="salidaAuto">Salida de Auto</button>
+            <button id="mostrarAutos">Mostrar Autos</button>
+        </div>
+
+        <!-- Formularios para entrada de auto -->
+        <div id="entradaForm">
+            <h3>Registrar Entrada de Auto</h3>
+            <div class="input-group">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" placeholder="Placa del auto">
+            </div>
+            <div class="input-group">
+                <label for="propietario">Propietario:</label>
+                <input type="text" id="propietario" placeholder="Nombre del propietario">
+            </div>
+            <button id="registrarEntrada">Registrar Entrada</button>
+        </div>
+
+        <!-- Mostrar autos -->
+        <div id="listaAutos">
+            <h3><img src="car.svg" alt="Car Icon" class="car-icon-small" /> Autos en Estacionamiento</h3>
+            <ul id="autosEnCola"></ul>
+        </div>
+
+        <!-- Salida de auto -->
+        <div id="salidaForm">
+            <h3>Seleccione el auto para salir</h3>
+            <ul id="autosParaSalir"></ul>
+        </div>
+
+        <!-- Mensaje del sistema -->
+        <div id="mensajeSistema"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

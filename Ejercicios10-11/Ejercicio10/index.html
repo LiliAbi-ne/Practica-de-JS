@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventanilla de Banco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ventanilla del Banco</h1>
+
+        <div class="form">
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre">
+
+            <label for="movimiento">Tipo de Movimiento:</label>
+            <select id="movimiento">
+                <option value="Pago de servicio">Pago de servicio</option>
+                <option value="Depósito">Depósito</option>
+                <option value="Retiro">Retiro</option>
+            </select>
+
+            <button id="agregarCliente">Agregar Cliente</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Turno</th>
+                    <th>Nombre</th>
+                    <th>Movimiento</th>
+                    <th>Tiempo en Cola</th>
+                </tr>
+            </thead>
+            <tbody id="colaClientes">
+                <!-- Se llenará dinámicamente -->
+            </tbody>
+        </table>
+
+        <button id="atenderCliente">Atender en Ventanilla</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.stack-display {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.element {
+    background-color: #4a148c;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+

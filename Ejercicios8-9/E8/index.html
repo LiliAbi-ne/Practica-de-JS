@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma Visual de Números Grandes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Suma Visual de Números Grandes</h1>
+        <p>Ingresa dos números grandes y observa cómo se suman paso a paso usando pilas</p>
+        <form id="sum-form">
+            <label for="number1">Número 1:</label>
+            <input type="text" id="number1" placeholder="Ingresa el primer número" required>
+
+            <label for="number2">Número 2:</label>
+            <input type="text" id="number2" placeholder="Ingresa el segundo número" required>
+
+            <button type="submit">Sumar</button>
+        </form>
+
+        <div class="visualization">
+            <div class="stack-container">
+                <h3>Pila 1</h3>
+                <div id="stack1" class="stack"></div>
+            </div>
+
+            <div class="stack-container">
+                <h3>Pila 2</h3>
+                <div id="stack2" class="stack"></div>
+            </div>
+
+            <div class="stack-container">
+                <h3>Acarreo</h3>
+                <div id="carry-stack" class="stack"></div>
+            </div>
+
+            <div class="stack-container">
+                <h3>Resultado</h3>
+                <div id="result-stack" class="stack"></div>
+            </div>
+        </div>
+
+        <div class="result">
+            <h2>Resultado Final:</h2>
+            <p id="result-text">0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
